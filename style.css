@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Silkscreen:wght@400;700&display=swap');
 
 .flex-container {
     display:flex;
     flex-direction: column;
-    font-family:"poiret one";
+    font-family:"inter";
     width: 60%;
     margin:auto;
+    /* background: #ddd; */
+    border: 2px solid rgb(58, 121, 194);
+    border-radius: 30px;
 }
 
 .heading {
-    background-color: rgb(68, 143, 230);
+    background-color: rgb(58, 121, 194);
     margin-bottom:10px;
+    border-radius: 25px;
+    border:1px solid rgb(0,0,0,0)
 }
 
 .undone {
@@ -66,7 +71,7 @@ form {
     padding: 6px 12px;
     border-radius:10px;
     height:100%;
-    font-family:"poiret one";
+    font-family:"inter";
     font-weight: bold;
     font-size:18px;
 }
@@ -80,14 +85,16 @@ form {
 }
 
 h1 {
-    font-size:24px;
+    font-size:36px;
     font-weight:bold;
     padding:0px 20px;
+    font-family:"iceland";
+    color: #ddd
 }
 
 ul {
     list-style: none;
-    border: 2px solid rgb(68, 143, 230);
+    border: 1px solid rgb(68, 143, 230);
     border-radius:4px;
     width:80%;
     padding:20px 10px;
@@ -102,7 +109,10 @@ li {
 
 li > p {
     margin:5px;
+    font-size:16px;
     font-weight: bold;
+    text-wrap:balance;
+
 }
 
 .del {
@@ -111,11 +121,9 @@ li > p {
     background-color: #ffffff00;
     border: 1px solid rgba(68, 144, 230, 0);
     border-radius:30px;
-    text-align: center;
     padding:5px;
-    aspect-ratio: 1/1;
-    display:flex;
-    justify-content:center;
+    max-height: 30px;
+    align-self: center;
 }
 
 .del:hover {
@@ -129,4 +137,27 @@ li > p {
 
 .done > ul {
     text-decoration:line-through;
+}
+
+.check {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    align-self:center;
+    border: 1px solid rgb(58, 121, 194);
+    flex-shrink:0;
+}
+
+.check:hover{
+     box-shadow: 0 0 0 0 #fff inset, rgb(68, 143, 230) 0 0 0 1px;
+}
+
+.check:checked {
+    background:rgb(68, 143, 230);
+    border: 1px solid #ddd;
 }

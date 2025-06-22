@@ -1,4 +1,5 @@
 const commitButton = document.querySelector("#commit");
+const textInput = document.querySelector("#task-input");
 
 function delItem (button) {
     let listItem = button.parentNode;
@@ -18,8 +19,7 @@ function checkTask(box) {
 }
 
 function commitTask () {
-    const textInput = document.querySelector("#task-input");
-
+    
     let task = textInput.value;
 
     if (task) {
@@ -56,6 +56,12 @@ function commitTask () {
 }
 
 commitButton.addEventListener("click", commitTask);
+textInput.addEventListener("keydown", function (event) {
+    if (event.keyCode  === 13) {
+        event.preventDefault();
+        commitTask();
+    } 
+})
 
 
 
