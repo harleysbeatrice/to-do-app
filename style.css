@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+.flex-container {
+    display:flex;
+    flex-direction: column;
+    font-family:"poiret one";
+    width: 60%;
+    margin:auto;
+}
+
+.heading {
+    background-color: rgb(68, 143, 230);
+    margin-bottom:10px;
+}
+
+.undone {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.done {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.form {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:82%; 
+}
+
+#task-input { 
+    box-shadow: inset #abacaf 0 0 0 2px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    border-radius: 3px;
+    padding: 6px 9px;
+    line-height: 1.4;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .2s ease; 
+    width:77%;
+    align-self:left;
+    margin-right:auto;
+}
+
+#task-input:hover{
+    box-shadow: 0 0 0 0 #fff inset, rgb(68, 143, 230) 0 0 0 2px;
+}
+
+#task-input:focus{
+    background: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0 #fff inset, rgb(68, 143, 230) 0 0 0 3px;
+}  
+
+#commit {
+    background-color: rgb(68, 143, 230);
+    border: 1px solid rgb(248, 234, 234);
+    color: rgb(248, 234, 234);
+    padding: 6px 12px;
+    border-radius:10px;
+    height:100%;
+    font-family:"poiret one";
+    font-weight: bold;
+    font-size:18px;
+}
+
+#commit:hover {
+    background-color:rgb(58, 121, 194)
+}
+
+#commit:active {
+    transform:scale(0.9);
+}
+
+h1 {
+    font-size:24px;
+    font-weight:bold;
+    padding:0px 20px;
+}
+
+ul {
+    list-style: none;
+    border: 2px solid rgb(68, 143, 230);
+    border-radius:4px;
+    width:80%;
+    padding:20px 10px;
+}
+
+li {
+    font-size:20px;
+    display:flex;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.del {
+    margin-left:auto;
+    margin-right:20px;
+    background-color: #ffffff00;
+    border: 1px solid rgba(68, 144, 230, 0);
+    border-radius:30px;
+    text-align: center;
+    /* padding:5px; */
+}
+
+.del:hover {
+    box-shadow: 0 0 0 0 #fff inset, rgb(68, 143, 230) 0 0 0 1px;
+}
+
+.del:active {
+    transform:scale(0.9);
+    box-shadow: 0 0 0 0 #fff inset, rgb(68, 143, 230) 0 0 0 2px;
+}
+
+.done > ul {
+    text-decoration:line-through;
+}
