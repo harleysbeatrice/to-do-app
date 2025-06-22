@@ -25,7 +25,7 @@
     align-items:center;
 }
 
-.form {
+form {
     display:flex;
     align-items:center;
     justify-content:center;
@@ -100,6 +100,11 @@ li {
     padding-bottom:5px;
 }
 
+li > p {
+    margin:5px;
+    font-weight: bold;
+}
+
 .del {
     margin-left:auto;
     margin-right:20px;
@@ -107,7 +112,10 @@ li {
     border: 1px solid rgba(68, 144, 230, 0);
     border-radius:30px;
     text-align: center;
-    /* padding:5px; */
+    padding:5px;
+    aspect-ratio: 1/1;
+    display:flex;
+    justify-content:center;
 }
 
 .del:hover {
